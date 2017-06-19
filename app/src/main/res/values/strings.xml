@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DLGDemo</string>
+
+    <!--Main Screen-->
+    <string name="mainScreen_message">GreenFlag customers can \ncreate an account to access </string>
+    <string name="mainScreen_car_health_updates">Car health updates</string>
+    <string name="mainScreen_request_a_rescue">Request a rescue online</string>
+    <string name="mainScreen_policy_info">Policy Information</string>
+
+    <string name="create_account">Create an account</string>
+
+
+    <!--REGISTER-->
+    <string name="registerEmail">Email address</string>
+    <string name="registerPassword">Create password</string>
+    <string name="registerPasswordRepeat">Repeat password</string>
+    <string name="registerPasswordInfo">Your password should have a minimum of 8 and contains at least one number, one upper case and one lower case letter. You can use special characters.</string>
+    <string name="registerPasswordHint">See criteria bellow</string>
+    <string name="registerNext">Next</string>
+
+    <string name="registerPasswordError01">invalid Password, see criteria bellow </string>
+
+    <string name="registerPasswordError02">Your passwords don\'t match </string>
+
+    <string name="registerEmailExistsError">An account already exists for this email address </string>
+
+    <string name="registerEmailInvalidError">Invalid email address </string>
+
+
+</resources>

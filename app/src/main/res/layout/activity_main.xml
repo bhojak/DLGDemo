@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/Black">
+
+
+
+
+            <!--LOGO-->
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_060_dp"
+                android:layout_marginBottom="@dimen/dimen_032_dp"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:background="@drawable/logo"
+                android:scaleType="fitCenter" />
+
+
+
+            <!--Message 01-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_message_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_logo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen_010_dp"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:gravity="left"
+                android:text="@string/mainScreen_message"
+                android:textSize="@dimen/dimen_020_sp"
+                android:textColor="@color/White"/>
+
+            <!--Message 01-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_message_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_message_01"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen_010_dp"
+                android:layout_marginLeft="@dimen/dimen_042_dp"
+                android:layout_marginStart="@dimen/dimen_042_dp"
+                android:layout_marginRight="@dimen/dimen_042_dp"
+                android:layout_marginEnd="@dimen/dimen_042_dp"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:drawableStart="@drawable/tick"
+                android:drawableLeft="@drawable/tick"
+                android:text="@string/mainScreen_car_health_updates"
+                android:textSize="@dimen/dimen_020_sp"
+                android:textColor="@color/White"/>
+
+            <!--Message 03-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_message_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_message_02"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen_010_dp"
+                android:layout_marginLeft="@dimen/dimen_042_dp"
+                android:layout_marginStart="@dimen/dimen_042_dp"
+                android:layout_marginRight="@dimen/dimen_042_dp"
+                android:layout_marginEnd="@dimen/dimen_042_dp"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:drawableStart="@drawable/tick"
+                android:drawableLeft="@drawable/tick"
+                android:text="@string/mainScreen_request_a_rescue"
+                android:textSize="@dimen/dimen_020_sp"
+                android:textColor="@color/White"/>
+
+            <!--Message 04-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_message_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_message_03"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen_010_dp"
+                android:layout_marginLeft="@dimen/dimen_042_dp"
+                android:layout_marginStart="@dimen/dimen_042_dp"
+                android:layout_marginRight="@dimen/dimen_042_dp"
+                android:layout_marginEnd="@dimen/dimen_042_dp"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:drawableStart="@drawable/tick"
+                android:drawableLeft="@drawable/tick"
+                android:text="@string/mainScreen_policy_info"
+                android:textSize="@dimen/dimen_020_sp"
+                android:textColor="@color/White"/>
+
+
+            <!-- Register -->
+            <com.bhupen.dlgdemo.Shared.CustomViews.MainAppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_032_dp"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:background="@drawable/gradient_button"
+                android:textAllCaps="false"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/dimen_020_sp"
+                android:text="@string/create_account"/>
+
+
+
+
+</RelativeLayout>

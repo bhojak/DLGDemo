@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/Black"
+    android:elevation="@dimen/dimen_005_dp">
+
+    <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+        android:id="@+id/toolbarHeaderTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:text="@string/create_account"
+        android:gravity="left"
+        android:textSize="@dimen/dimen_023_sp"/>
+
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Black"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bhupen.dlgdemo.Features.Register.RegisterActivity"
+    tools:showIn="@layout/activity_register">
+
+
+        <View
+            android:id="@+id/breakLine01"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/White"/>
+
+            <!--email Message-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_RegEmailMessage"
+                android:layout_below="@+id/breakLine01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:imeOptions="actionNext"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:layout_marginTop="@dimen/dimen_010_dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/registerEmail"
+                android:textColor="@color/White"
+                android:textSize="@dimen/dimen_020_dp"/>
+
+            <!--Email ET-->
+            <RelativeLayout
+                android:id="@+id/reg_email_layout"
+                android:layout_below="@+id/txt_RegEmailMessage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_050_dp"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/register_tick0"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingRight="@dimen/dimen_020_dp"
+                    android:paddingEnd="@dimen/dimen_020_dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_032_dp"
+                    android:layout_marginStart="@dimen/dimen_032_dp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/tick"/>
+
+                <EditText
+                    android:id="@+id/register_emailET"
+                    android:textColor="@color/Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/dimen_010_dp"
+                    android:paddingLeft="@dimen/dimen_010_dp"
+                    android:textSize="@dimen/dimen_020_sp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edittext_style"
+                    android:layout_centerVertical="true"
+                    />
+
+                <!--<EditText-->
+                <!--android:id="@+id/register_emailET"-->
+                <!--android:textColor="@color/Black"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="@dimen/dimen_032_dp"-->
+                <!--android:layout_marginRight="@dimen/dimen_032_dp"-->
+                <!--android:layout_marginStart="@dimen/dimen_032_dp"-->
+                <!--android:layout_marginEnd="@dimen/dimen_032_dp"-->
+                <!--android:layout_marginTop="@dimen/dimen_010_dp"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:gravity="left"-->
+                <!--android:textSize="@dimen/dimen_024_sp"-->
+                <!--android:background="@drawable/edittext_style" />-->
+            </RelativeLayout>
+
+
+            <!--<EditText-->
+                <!--android:id="@+id/register_emailET"-->
+                <!--android:layout_below="@+id/txt_RegEmailMessage"-->
+                <!--android:textColor="@color/Black"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/dimen_050_dp"-->
+                <!--android:layout_marginLeft="@dimen/dimen_032_dp"-->
+                <!--android:layout_marginRight="@dimen/dimen_032_dp"-->
+                <!--android:layout_marginStart="@dimen/dimen_032_dp"-->
+                <!--android:layout_marginEnd="@dimen/dimen_032_dp"-->
+                <!--android:layout_marginTop="@dimen/dimen_010_dp"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:gravity="left"-->
+                <!--android:textSize="@dimen/dimen_024_sp"-->
+                <!--android:background="@drawable/edittext_style" />-->
+
+            <!--Email error Message-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_EmailErorMessage"
+                android:layout_below="@+id/reg_email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_050_dp"
+                android:gravity="left"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/cross"
+                android:background="@drawable/edittext_style"
+                android:padding="@dimen/dimen_010_dp"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:layout_marginTop="@dimen/dimen_010_dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/dimen_014_sp" />
+
+            <!--Create password Message-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_RegCreatePasswordMessage"
+                android:layout_below="@+id/txt_EmailErorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:layout_marginTop="@dimen/dimen_010_dp"
+                android:text="@string/registerPassword"
+                android:textColor="@color/White"
+                android:textSize="@dimen/dimen_020_dp" />
+
+
+            <!-- password layout -->
+            <RelativeLayout
+                android:id="@+id/reg_password_layout01"
+                android:layout_below="@+id/txt_RegCreatePasswordMessage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_050_dp"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/register_tick1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_032_dp"
+                    android:layout_marginStart="@dimen/dimen_032_dp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:src="@drawable/tick"/>
+
+                <EditText
+                    android:id="@+id/register_passwordET1"
+                    android:textColor="@color/Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:hint="@string/registerPasswordHint"
+                    android:paddingStart="@dimen/dimen_010_dp"
+                    android:paddingLeft="@dimen/dimen_010_dp"
+                    android:textSize="@dimen/dimen_016_sp"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/colorPrimary"
+                    android:background="@drawable/edittext_style"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:id="@+id/register_eye1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_032_dp"
+                    android:layout_marginEnd="@dimen/dimen_032_dp"
+                    android:background="@color/greyText"
+                    android:src="@drawable/eye_1"/>
+            </RelativeLayout>
+
+        <!--Repeat password Message-->
+        <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+            android:id="@+id/txt_RegRepeatPasswordMessage"
+            android:layout_below="@+id/reg_password_layout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/dimen_032_dp"
+            android:layout_marginRight="@dimen/dimen_032_dp"
+            android:layout_marginStart="@dimen/dimen_032_dp"
+            android:layout_marginEnd="@dimen/dimen_032_dp"
+            android:layout_marginTop="@dimen/dimen_010_dp"
+            android:text="@string/registerPasswordRepeat"
+            android:textColor="@color/White"
+            android:textSize="@dimen/dimen_020_dp" />
+
+            <!-- password layout 02-->
+            <RelativeLayout
+                android:id="@+id/reg_password_layout02"
+                android:layout_below="@+id/txt_RegRepeatPasswordMessage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_050_dp"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/register_tick2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_032_dp"
+                    android:layout_marginStart="@dimen/dimen_032_dp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:src="@drawable/tick"/>
+
+                <EditText
+                    android:id="@+id/register_passwordET2"
+                    android:textColor="@color/Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/dimen_016_sp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_style"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+                <ImageView
+                    android:id="@+id/register_eye2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_032_dp"
+                    android:layout_marginEnd="@dimen/dimen_032_dp"
+                    android:background="@color/greyText"
+                    android:src="@drawable/eye_1"/>
+            </RelativeLayout>
+
+            <!-- password error Message1-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_PasswordErorMessage01"
+                android:layout_below="@+id/reg_password_layout02"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_050_dp"
+                android:gravity="left"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:layout_marginTop="@dimen/dimen_020_dp"
+                android:text="@string/registerPasswordError01"
+                android:textColor="@color/White"
+                android:textSize="@dimen/dimen_020_sp" />
+
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_PasswordErorMessage02"
+                android:layout_below="@+id/reg_password_layout02"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_050_dp"
+                android:gravity="left"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:layout_marginTop="@dimen/dimen_020_dp"
+                android:text="@string/registerPasswordError01"
+                android:textColor="@color/White"
+                android:textSize="@dimen/dimen_020_sp" />
+
+    <!--Password Error Message-->
+            <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
+                android:id="@+id/txt_RegPasswordInfoMessage"
+                android:layout_below="@+id/reg_password_layout02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registerPasswordInfo"
+                android:textColor="@color/White"
+                android:textSize="@dimen/dimen_020_dp"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/dimen_020_dp"
+                android:layout_marginBottom="@dimen/dimen_032_dp"
+                android:layout_marginLeft="@dimen/dimen_032_dp"
+                android:layout_marginStart="@dimen/dimen_032_dp"
+                android:layout_marginRight="@dimen/dimen_032_dp"
+                android:layout_marginEnd="@dimen/dimen_032_dp"
+                android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

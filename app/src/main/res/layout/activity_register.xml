@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/Black">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_appbar_layout"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar_layout"
+            android:id="@+id/register_toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_layout"
+        android:layout_below="@+id/reg_appbar_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <com.bhupen.dlgdemo.Shared.CustomViews.MainAppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_060_dp"
+        android:background="@drawable/gradient_button"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/dimen_020_sp"
+        android:layout_marginBottom="@dimen/dimen_032_dp"
+        android:layout_marginLeft="@dimen/dimen_032_dp"
+        android:layout_marginStart="@dimen/dimen_032_dp"
+        android:layout_marginRight="@dimen/dimen_032_dp"
+        android:layout_marginEnd="@dimen/dimen_032_dp"
+        android:text="@string/registerNext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
