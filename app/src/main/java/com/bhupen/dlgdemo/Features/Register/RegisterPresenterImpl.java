@@ -56,6 +56,7 @@ public class RegisterPresenterImpl implements RegisterPresenterInterface {
             view.invalidEmail(messageFactory.invalidPasswordError());
         } else {
             validPassword01 = true;
+            view.validPassword01();
         }
     }
 
@@ -64,7 +65,8 @@ public class RegisterPresenterImpl implements RegisterPresenterInterface {
         if(!validation.checkForValidPassword(password2)) {
             view.invalidEmail(messageFactory.invalidPasswordError());
         } else {
-            validPassword01 = true;
+            validPassword02 = true;
+            view.validPassword02();
         }
     }
 

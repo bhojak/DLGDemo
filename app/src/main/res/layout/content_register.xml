@@ -51,20 +51,20 @@
                     android:id="@+id/register_tick0"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:paddingRight="@dimen/dimen_020_dp"
-                    android:paddingEnd="@dimen/dimen_020_dp"
+                    android:paddingRight="@dimen/dimen_010_dp"
+                    android:paddingEnd="@dimen/dimen_010_dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dimen_032_dp"
                     android:layout_marginStart="@dimen/dimen_032_dp"
                     android:scaleType="fitCenter"
                     android:layout_centerVertical="true"
-
+                    android:visibility="gone"
                     android:src="@drawable/tick"/>
 
                 <EditText
                     android:id="@+id/register_emailET"
-                    android:textColor="@color/Black"
+                    android:textColor="@color/White"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textEmailAddress"
@@ -75,39 +75,8 @@
                     android:background="@drawable/edittext_style"
                     android:layout_centerVertical="true"
                     />
-
-                <!--<EditText-->
-                <!--android:id="@+id/register_emailET"-->
-                <!--android:textColor="@color/Black"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:layout_marginLeft="@dimen/dimen_032_dp"-->
-                <!--android:layout_marginRight="@dimen/dimen_032_dp"-->
-                <!--android:layout_marginStart="@dimen/dimen_032_dp"-->
-                <!--android:layout_marginEnd="@dimen/dimen_032_dp"-->
-                <!--android:layout_marginTop="@dimen/dimen_010_dp"-->
-                <!--android:inputType="textEmailAddress"-->
-                <!--android:gravity="left"-->
-                <!--android:textSize="@dimen/dimen_024_sp"-->
-                <!--android:background="@drawable/edittext_style" />-->
             </RelativeLayout>
 
-
-            <!--<EditText-->
-                <!--android:id="@+id/register_emailET"-->
-                <!--android:layout_below="@+id/txt_RegEmailMessage"-->
-                <!--android:textColor="@color/Black"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="@dimen/dimen_050_dp"-->
-                <!--android:layout_marginLeft="@dimen/dimen_032_dp"-->
-                <!--android:layout_marginRight="@dimen/dimen_032_dp"-->
-                <!--android:layout_marginStart="@dimen/dimen_032_dp"-->
-                <!--android:layout_marginEnd="@dimen/dimen_032_dp"-->
-                <!--android:layout_marginTop="@dimen/dimen_010_dp"-->
-                <!--android:inputType="textEmailAddress"-->
-                <!--android:gravity="left"-->
-                <!--android:textSize="@dimen/dimen_024_sp"-->
-                <!--android:background="@drawable/edittext_style" />-->
 
             <!--Email error Message-->
             <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
@@ -165,13 +134,17 @@
                     android:layout_marginLeft="@dimen/dimen_032_dp"
                     android:layout_marginStart="@dimen/dimen_032_dp"
                     android:scaleType="fitCenter"
+                    android:paddingRight="@dimen/dimen_010_dp"
+                    android:paddingEnd="@dimen/dimen_010_dp"
                     android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:visibility="gone"
                     android:src="@drawable/tick"/>
 
                 <EditText
                     android:id="@+id/register_passwordET1"
-                    android:textColor="@color/Black"
+                    android:textColor="@color/White"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textPassword"
@@ -193,7 +166,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="@dimen/dimen_032_dp"
                     android:layout_marginEnd="@dimen/dimen_032_dp"
-                    android:background="@color/greyText"
+
                     android:src="@drawable/eye_1"/>
             </RelativeLayout>
 
@@ -231,14 +204,18 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dimen_032_dp"
                     android:layout_marginStart="@dimen/dimen_032_dp"
+                    android:paddingRight="@dimen/dimen_010_dp"
+                    android:paddingEnd="@dimen/dimen_010_dp"
                     android:scaleType="fitCenter"
                     android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:visibility="gone"
                     android:src="@drawable/tick"/>
 
                 <EditText
                     android:id="@+id/register_passwordET2"
-                    android:textColor="@color/Black"
+                    android:textColor="@color/White"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textPassword"
@@ -256,7 +233,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="@dimen/dimen_032_dp"
                     android:layout_marginEnd="@dimen/dimen_032_dp"
-                    android:background="@color/greyText"
                     android:src="@drawable/eye_1"/>
             </RelativeLayout>
 
@@ -293,7 +269,7 @@
                 android:textColor="@color/White"
                 android:textSize="@dimen/dimen_020_sp" />
 
-    <!--Password Error Message-->
+            <!--Password Error Message-->
             <com.bhupen.dlgdemo.Shared.CustomViews.BhupenTextView01
                 android:id="@+id/txt_RegPasswordInfoMessage"
                 android:layout_below="@+id/reg_password_layout02"
